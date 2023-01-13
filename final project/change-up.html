@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <title>Change-up</title>
+    <link rel="stylesheet" type="text/css">
+    <style>
+    body
+    {
+      background-image:url('https://cdn.pixabay.com/photo/2015/07/15/11/53/hand-846092_960_720.jpg');
+      background-size: 100%;
+    }
+    nav > ul 
+    {
+      background-color: white;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav a 
+    {
+      color: inherit; 
+      display: block; 
+      font-size: 2.4rem;
+      padding: 10px;
+      text-decoration: none; 
+    }
+    nav a:hover 
+    {
+      background-color: rgb(115, 115, 115);
+      color: white;
+    }
+    .Introduce
+    {
+      position: relative;
+      left: 0px;
+      top: 600px;
+      color:white;
+    }
+    .baseball
+    {
+      position:relative;
+      left:35%;
+      top:300px;
+      width: 600px;
+      height: 600px;
+    }
+    model-viewer
+    {
+      position:relative;
+      left:35%;
+      top:300px;
+      height: 600px;
+      width: 600px;
+    }
+    img{
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+    </style>
+    <body>
+        <div class="final-sidebar final-bar-block final-border-right">
+        <div class="final-sidebar final-bar-block final-border-right" style="display:none;margin-right:200px; margin-bottom:600px;" id="mySidebar">
+        <button onclick="Final_close()" class="List">Close &times;</button>
+        <nav>
+            <ul>
+            <li><a href="final.html" class="Final-bar-item Final-botton">Home</a></li>
+            <li><a href="Nike.html" class="Final-bar-item Final-button">Nike</a></li>
+            <li><a href="change-up.html" class="Final-bar-item Final-button">Change-up</a></li>
+            <li><a href="slider.html" class="Final-bar-item Final-button">Slider</a></li>
+            <li><a href="curve.html" class="Final-bar-item Final-button">Curve</a></li>
+            <li><a href="butterfly.html" class="Final-bar-item Final-button">Butterfly</a></li>
+            <li><a href="four-seam.html" class="Final-bar-item Final-button">Four-Seam</a></li>
+            <li><a href="challenge.html" class="Final-bar-item Fianl-bottom">Challenge</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div class="Final-teal">
+            <button class="Final-button" onclick="Final_open()" style="width: 70px; height:40px;">&#9776;</button>
+            <div class="Final-container" style="font-size:50px;">
+              <b><font color="white">Change-up</font color></b>
+            </div>
+            <div class="Introduce">
+              <font size="8"><b>Introduce</b></font>
+              <br>
+              <font size="5">
+              As the name suggests, the changeup ball looks like a fastball, whether it is shot or thrown, but the speed of the ball is much slower to disrupt the rhythm of the hitter.
+              <br>
+              When throwing a changeup, it is best to have the arm movement or the point of release when throwing the ball as close as possible to when throwing a straight ball. The most common way to change the ball is the so-called Circle Change, which is commonly known as the OK ball. Make a circle with the thumb and index finger, then straighten the other three fingers first, and then use the back three fingers to hold the ball and throw it. The release is similar to a straight ball, but the ball is much slower to break the hitter's rhythm; the ball will drop to the inside or outside corner before hitting home plate.
+              </font>
+            </div>
+        </div>
+        </div>
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <model-viewer alt="Baseball in 3D" src="newbaseball.gltf" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
+        <img src="Change-up__AdobeExpress.gif">
+        <script>
+        function Final_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        }
+        
+        function Final_close() {
+          document.getElementById("mySidebar").style.display = "none";
+        }
+        </script>
+    </body>
+</html>
